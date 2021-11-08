@@ -3,7 +3,6 @@
   --gris1: #edf2f6;
   --verde2: #2a4b2f;
   --verde3: #1c2e1c;
-  --negro: #000000;
   --headingFont:'Raleway', sans-serif;
   --textFont:  'Roboto', sans-serif;
 }
@@ -17,7 +16,7 @@ html {
 }
 body {
   min-height: 100%;
-  background-color: #2a2a2a;
+  background-color: #00000025;
   font-size: 16px; 
   font-size: 1.6rem;
   font-family: var(--textFont);
@@ -84,6 +83,13 @@ a {
 .btn-grey:hover {
   background: #363636;
 }
+.btn-logout {
+  background-color: var(--verde2);
+  color: #ffffff;
+}
+.btn-logout:hover {
+  background: #315236;
+}
 .btn-block {
   display: block;
   width: 100%;
@@ -105,7 +111,7 @@ a {
   }
 
   aside {
-      background-color: #225729;
+      background-color: #29442d;
       flex: 0 0 300px;
   }
   .seccion-principal {
@@ -335,4 +341,8 @@ aside  {
   margin-top: 2rem;
   display: block;
   opacity: .7;
+}
+
+.logout-red {
+  color: #e74242;
 }
