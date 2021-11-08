@@ -1,4 +1,5 @@
 import React from 'react';
+import Bar from '../layout/Bar';
 import Sidebar from '../layout/Sidebar';
 
 const Proyects = () => {
@@ -7,7 +8,10 @@ const Proyects = () => {
             <Sidebar/>
 
             <div className="seccion-principal">
+                <Bar/>
                 <main>
+                    
+
                     <div className="contenedor-tareas">
 
                     </div>
