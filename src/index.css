@@ -97,11 +97,20 @@ a {
 .btn-submit:hover {
   background-color: var(--verde2);
 }
+.btn-submit-tarea:hover {
+  background: #3a553e86;
+}
 .btn-blank {
   margin: 0;
   padding: 0;
   display: block;
   background-color: transparent;
+}
+.btn-bar {
+  background-color: #29442d;
+}
+.btn-bar:hover {
+  background: #315236;
 }
 
 @media (min-width: 768px) {
