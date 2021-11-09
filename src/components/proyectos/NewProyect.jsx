@@ -33,7 +33,7 @@ const NewProyect = () => {
             <button
                 type="button"
                 className="btn btn-block btn-grey"
-            >Nuevo Proyecto</button>
+            ><i class="fas fa-folder-plus estado"></i>Nuevo Proyecto</button>
 
             <form
                 className="formulario-nuevo-proyecto"
@@ -47,12 +47,12 @@ const NewProyect = () => {
                     value={nameProyect}
                     onChange={onChangeProyect}
                 />
-
-                <input 
+                
+                <button
                     type="submit" 
                     className="btn btn-block btn-grey"
-                    value="Agregar Proyecto" 
-                />
+                    value=" Agregar Proyecto" 
+                ><i class="fas fa-plus estado"></i>Agregar Proyecto</button>
             </form>
         </Fragment>
     );

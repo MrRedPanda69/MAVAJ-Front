@@ -5,7 +5,7 @@ const Proyect = ({proyect}) => {
         <li>
             <button
                 type="button"
-                className="btn btn-blank ft-sidebar"
+                className="btn btn-block btn-bar ft-sidebar"
             >{proyect.nameProyect}</button>
         </li>
     );
