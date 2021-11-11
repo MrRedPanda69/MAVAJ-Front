@@ -13,11 +13,10 @@ const FormTarea = () => {
                     />
 
                     <div className="contenedor-input">
-                        <input 
+                        <button
                             type="submit" 
                             className="btn btn-primario btn-submit-tarea btn-block"  
-                            value="Agregar Tarea" 
-                        />
+                        ><i class="fas fa-plus estado"></i>Agregar Tarea</button>
                     </div>
                 </div>
             </form>

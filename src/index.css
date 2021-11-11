@@ -42,6 +42,9 @@ h2 {
 .ft-sidebar {
   color: var(--blanco);
 }
+.ft-bold {
+  font-weight: bold !important;
+}
 ul {
   list-style: none;
   padding: 0;
@@ -59,7 +62,7 @@ a {
   padding: 1.5rem;
   font-size: 1.4;
   font-weight: 400;
-  border-radius: .5rem;
+  border-radius: .5rem !important;
   border: none;
   transition: background-color .3s ease;
 }
@@ -112,6 +115,11 @@ a {
 .btn-bar:hover {
   background: #315236;
 }
+.btn-eliminar:hover {
+  background: rgb(228, 50, 50);
+  color:#e1e1e1;
+  transition: ease-in .2s;
+}
 
 @media (min-width: 768px) {
   .contenedor-app {
@@ -162,7 +170,8 @@ aside  {
   display: flex;
   justify-content: space-between;
   background-color: var(--verde2);
-  padding: 4rem;
+  padding: 2rem;
+  align-items: center;
 }
 .nombre-usuario {
   color: var(--blanco);
