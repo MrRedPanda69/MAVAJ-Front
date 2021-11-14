@@ -116,7 +116,7 @@ a {
   background: #315236;
 }
 .btn-eliminar:hover {
-  background: rgb(228, 50, 50);
+  background: #e74242;
   color:#e1e1e1;
   transition: ease-in .2s;
 }
@@ -293,8 +293,9 @@ aside  {
 .error {
   max-width: 600px;
   margin: 2rem auto 0 auto;
-  background-color: rgb(170, 0, 0);
+  background-color: #e74242;
   color: var(--blanco);
+  border-radius: .5rem !important;
 }
 
 
