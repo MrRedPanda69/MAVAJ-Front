@@ -3,6 +3,8 @@ import Proyect from './Proyect';
 
 import proyectContext from '../../context/proyects/proyectContext';
 
+import { CSSTransition, TransitionGroup } from 'react-transition-group';
+
 const ListProyects = () => {
 
     // Extraer proyectos del state inicial
@@ -11,6 +13,7 @@ const ListProyects = () => {
 
     useEffect(() => {
         getProyects();
+        // eslint-disable-next-line
     }, []);
 
     // Revisar si proyectos tiene contenido
@@ -18,12 +21,19 @@ const ListProyects = () => {
 
     return (
         <ul className="listado-proyectos">
-            {proyects.map(proyect => (
-                <Proyect
-                    key={proyect.id}
-                    proyect={proyect}
-                />
-            ))}
+            <TransitionGroup>
+                {proyects.map(proyect => (
+                    <CSSTransition
+                        key={proyect.id}
+                        timeout={200}
+                        classNames="tarea"
+                    >
+                        <Proyect
+                            proyect={proyect}
+                        />
+                    </CSSTransition>
+                ))}
+            </TransitionGroup>
         </ul>
     );
 }

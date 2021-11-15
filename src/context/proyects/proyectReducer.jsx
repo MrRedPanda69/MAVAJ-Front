@@ -24,7 +24,7 @@ const proyectReducer = (state, action) => {
         case ADD_PROYECT:
             return {
                 ...state,
-                proyects: [...state.proyects, action.payload],
+                proyects: [action.payload, ...state.proyects],
                 form: false, 
                 errorform: false
             }

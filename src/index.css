@@ -41,6 +41,7 @@ h2 {
 }
 .ft-sidebar {
   color: var(--blanco);
+  font-family: var(--textFont);
 }
 .ft-bold {
   font-weight: bold !important;

@@ -6,17 +6,20 @@ import NewAccount from './components/auth/NewAccount';
 import Proyects from './components/proyectos/Proyects';
 
 import ProyectState from './context/proyects/proyectState';
+import TareaState from './context/tareas/tareaState'
 
 function App() {
   return (
     <ProyectState>
-      <Router>
-        <Switch>
-          <Route exact path="/" component={Login} />
-          <Route exact path="/new-account" component={NewAccount} />
-          <Route exact path="/proyects" component={Proyects} />
-        </Switch>
-      </Router>
+      <TareaState>
+        <Router>
+          <Switch>
+            <Route exact path="/" component={Login} />
+            <Route exact path="/new-account" component={NewAccount} />
+            <Route exact path="/proyects" component={Proyects} />
+          </Switch>
+        </Router>
+      </TareaState>
     </ProyectState>
   );
 }
