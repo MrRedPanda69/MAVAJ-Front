@@ -6,19 +6,26 @@ import NewAccount from './components/auth/NewAccount';
 import Proyects from './components/proyectos/Proyects';
 
 import ProyectState from './context/proyects/proyectState';
-import TareaState from './context/tareas/tareaState'
+import TareaState from './context/tareas/tareaState';
+import AlertaState from './context/alertas/alertaState';
+import AuthState from './context/authentication/authState';
 
 function App() {
+  console.log(process.env.REACT_APP_BACKEND_URL)
   return (
     <ProyectState>
       <TareaState>
-        <Router>
-          <Switch>
-            <Route exact path="/" component={Login} />
-            <Route exact path="/new-account" component={NewAccount} />
-            <Route exact path="/proyects" component={Proyects} />
-          </Switch>
-        </Router>
+        <AlertaState>
+          <AuthState>
+            <Router>
+              <Switch>
+                <Route exact path="/" component={Login} />
+                <Route exact path="/new-account" component={NewAccount} />
+                <Route exact path="/proyects" component={Proyects} />
+              </Switch>
+            </Router>
+          </AuthState>
+        </AlertaState>
       </TareaState>
     </ProyectState>
   );

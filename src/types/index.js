@@ -15,3 +15,15 @@ export const TAREA_STATUS = 'TAREA_STATUS';
 export const ACTUAL_TAREA = 'ACTUAL_TAREA';
 export const UPDATE_TAREA = 'UPDATE_TAREA';
 export const CLEAN_TAREA = 'CLEAN_TAREA';
+
+// alertaContext
+export const SHOW_ALERT = 'SHOW_ALERT';
+export const HIDE_ALERT = 'HIDE_ALERT';
+
+// authContext
+export const REGISTRATION_OK = 'REGISTRATION_OK';
+export const REGISTRATION_ERROR = 'REGISTRATION_ERROR';
+export const GET_USER = 'GET_USER';
+export const LOGIN_OK = 'LOGIN_OK';
+export const LOGIN_ERROR = 'LOGIN_ERROR';
+export const LOG_OUT = 'LOG_OUT';
