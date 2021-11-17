@@ -6,10 +6,10 @@ import clientAxios from '../../config/axios';
 import { 
     REGISTRATION_OK,
     REGISTRATION_ERROR,
-    GET_USER,
-    LOGIN_OK,
-    LOGIN_ERROR,
-    LOG_OUT
+    // GET_USER,
+    // LOGIN_OK,
+    // LOGIN_ERROR,
+    // LOG_OUT
 } from '../../types';
 
 const AuthState = props => {
